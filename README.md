@@ -2,8 +2,7 @@
 
 <img width="750" alt="Tableau dashboard showing tables, line graphs, and area charts for total sales, total orders, and average time to ship" src="https://imgur.com/DpPG33J.png">
 
-Analyzing Elist order trends from 2019-2022. An interactive Tableau dashboard can be found [here](https://public.tableau.com/views/elist_orders_dashboard_17537737354320/ordersdashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
-
+Analyzing Elist order trends from 2019-2022. 
 # Table of Contents
 <a id='table_of_contents'></a><br>
 [Project Summary](#section_1)<br>
@@ -38,7 +37,7 @@ Here is the Entity Relationship Diagram:
 
 <img width="750" alt="Entity Relationship Diagram showing orders, order statuses, customers, and geographic information tables" src="https://imgur.com/L3Fh37t.png">
 
-You can view the data in greater detail [here](https://github.com/SidCodes8/ecomm-analysis/tree/main/data).
+
 <a id='section_2'></a>
 # Part 1: Trends (Excel)
 [(Back to table of contents)](#table_of_contents)<br><br>
@@ -71,7 +70,6 @@ Here is an example of the pivot table used for seasonality insights:
 
 <img width="750" alt="Excel pivot table showing totals and growth rates for monthly sales, AOV, and orders" src="https://imgur.com/Uns8sPD.png">
 
-You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/SidCodes8/ecomm-analysis/blob/main/excel/elist_orders_case_study.xlsx).
 
 <a id='section_3'></a>
 # Part 2: Targeted Insights (SQL)
@@ -101,7 +99,7 @@ You can find more detailed analysis in [this downloadable Excel workbook](https:
 <b>Technical Analysis:</b><br>
 For this analysis, I used SQL and BigQuery. In regards to SQL, I used aggregation functions, window functions, joins, filtering, CASE expressions, common table expressions (CTEs), and in a couple instances the QUALIFY clause to use row_number() to filter results.
 
-You can find my SQL queries [here](https://github.com/SidCodes8/ecomm-analysis/blob/main/sql/elist_sales_trends_queries.sql).
+
 
 Here is an example of a query result that uses the aforementioned qualify clause:
 ```sql
@@ -172,15 +170,12 @@ And here is its result:
 <b>Technical Analysis:</b><br>
 In this section, I primarily used Tableau. SQL and BigQuery were also used to create a dataset for Tableau. My Tableau dashboard incorporates filters, tables, line graphs, and area charts.
 
-You can find the SQL code for the dataset I created in BigQuery [here](https://github.com/SidCodes8/ecomm-analysis/blob/main/sql/elist_dataset_tableau_query.sql).
 
 Here is a peek of what the Tableau dashboard for this part of my analysis looks like:
 
 <img width="750" alt="Tableau dashboard showing tables, line graphs, and area charts for total sales, total orders, and average time to ship" src="https://imgur.com/DpPG33J.png">
 
-An interactive version of the above Tableau dashboard can be found [here](https://public.tableau.com/views/elist_orders_dashboard_17537737354320/ordersdashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
-A copy of my Tableau workbook can be found [here](https://github.com/SidCodes8/ecomm-analysis/tree/main/tableau).
 
 <a id='section_5'></a>
 # Part 4: Recommendations & Next Steps
